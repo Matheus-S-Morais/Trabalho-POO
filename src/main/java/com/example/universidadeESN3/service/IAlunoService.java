@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+
 public interface IAlunoService {
 
     Aluno buscarPorId(Long id);
@@ -20,4 +21,5 @@ public interface IAlunoService {
     ResponseEntity<?> atualizar(Aluno aluno);
 
     void excluir(Long id);
+
 }

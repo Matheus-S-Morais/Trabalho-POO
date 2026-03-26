@@ -6,4 +6,5 @@ public class InvalidPhotoException extends RuntimeException{
         super(message);
     }
 
+
 }

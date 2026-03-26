@@ -4,11 +4,13 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
 
+
 @Data
 @Entity
 @Builder
 @Table(name = "tbAluno")
 public class Aluno {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

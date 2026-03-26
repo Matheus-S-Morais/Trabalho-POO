@@ -12,11 +12,13 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
+
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Long> {
     List<Aluno> findByNome(String nome);
 
     List<Aluno> findByNomeStartingWith(String nome);
+
 
 //    @Query(value = "SELECT a FROM Aluno a WHERE a.nome LIKE :nome%", nativeQuery = true)
 //    List<Aluno> findByNomeStartingWith(@Param("nome") String nome);

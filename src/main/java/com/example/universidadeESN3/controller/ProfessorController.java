@@ -23,15 +23,18 @@ public class ProfessorController {
 
     private final ProfessorService professorService;
 
+
     @GetMapping
     public ResponseEntity<List<Professor>> buscarTodos() {
         return ResponseEntity.ok(professorService.buscarTodos());
     }
 
+
     @GetMapping(path = "/{id}")
     public ResponseEntity<Professor> buscarPorId(@PathVariable Long id){
         return ResponseEntity.ok(professorService.buscarPorId(id));
     }
+
 
     @PostMapping
     public ResponseEntity<Professor> salvarProfessor(@Valid @RequestBody ProfessorRequestDTO professorRequestDTO){

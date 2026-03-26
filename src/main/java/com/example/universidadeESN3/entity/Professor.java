@@ -10,10 +10,12 @@ import lombok.Data;
 @Entity
 public class Professor {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long matricula;
     private String nome;
     private Boolean active;
+
 }

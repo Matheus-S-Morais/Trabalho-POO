@@ -10,4 +10,6 @@ public interface IClientPhoto {
     @GetMapping("/photos/{id}")
     Object getPhotoById(@PathVariable Long id);
 
+
+
 }

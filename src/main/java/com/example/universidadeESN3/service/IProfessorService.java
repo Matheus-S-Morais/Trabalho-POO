@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+
 public interface IProfessorService {
 
     Professor buscarPorId(Long id);
@@ -19,4 +20,5 @@ public interface IProfessorService {
     ResponseEntity<?> atualizar(Long id, ProfessorDTO professorDTO);
 
     ResponseEntity<?> excluir(Long id);
+
 }

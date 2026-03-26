@@ -23,13 +23,16 @@ import java.util.Optional;
 @Slf4j
 public class AlunoController {
 
+
     @Autowired
     private AlunoService alunoService;
+
 
     @GetMapping
     public ResponseEntity<List<Aluno>> buscarTodos() {
         return ResponseEntity.ok(alunoService.buscarTodos());
     }
+
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<AlunoResponseDTO> buscarPorId(@PathVariable Long id){
